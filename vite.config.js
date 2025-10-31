@@ -33,4 +33,11 @@ export default defineConfig({
       "@":path.resolve(__dirname,"./src")
     },
   },
+  build: {
+    outDir: "dist",
+    sourcemap: false,
+  },
+  css: {
+    postcss: {}, // ensures fallback if lightningcss breaks
+  },
 })
